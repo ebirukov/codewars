@@ -1,17 +1,17 @@
 package org.johnsoft.kata;
 
 import java.util.Arrays;
-import java.util.Map;
 import java.util.function.*;
-import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.*;
 
 public class FindOdd {
     public static int findIt(int[] a) {
-        Arrays.stream(a).boxed().collect(groupingBy(Function.identity(), counting()))
-                ;
-
-        return 0;
+        int r = 0;
+        for (int i = 0; i < a.length; i++) {
+            r = r ^ a [i];
+            System.out.println(r);
+        }
+        return r;//Arrays.stream(a).reduce(0, (x, y) -> x ^ y);
     }
 }

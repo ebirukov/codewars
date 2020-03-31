@@ -13,5 +13,7 @@ public class FindOddTest {
         assertEquals(10, FindOdd.findIt(new int[]{10}));
         assertEquals(10, FindOdd.findIt(new int[]{1,1,1,1,1,1,10,1,1,1,1}));
         assertEquals(1, FindOdd.findIt(new int[]{5,4,3,2,1,5,4,3,2,10,10}));
+        assertEquals(6, FindOdd.findIt(new int[]{6,6,6,5,5}));
+
     }
 }
